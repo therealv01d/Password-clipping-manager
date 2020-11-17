@@ -1,4 +1,4 @@
-from project import Smoklip
+from smoklip import Smoklip
 import sys
 
 if len(sys.argv) < 2:
