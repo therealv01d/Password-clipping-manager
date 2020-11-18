@@ -16,9 +16,9 @@ class Smoklip(object):
     def askusername(self, username):
         # Storing the dictionary inside accounts 
         accounts = self.returnDict()
-        if username in accounts:
+        if username.lower() in accounts:
             for key, values in accounts.items():
-                pyperclip.copy(accounts[username]["password"])
+                pyperclip.copy(values["password"])
                 print("Password for account " + username + " has been copied to clipboard")
                 break
         else:
